@@ -1,0 +1,141 @@
+body {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 550;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+/* BTN */
+
+button {
+  padding: 13px 30px;
+  background-color: #7EA0E5;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 550;
+  font-size: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: .4s;
+  color: #fff;
+}
+
+/* .btn:hover {
+  background-color: #fff;
+
+} */
+
+
+
+
+/* HEADER */
+header {
+  width: 100%;
+  position: fixed;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: .5px solid #000;
+  z-index: 1;
+}
+
+header > .inner {
+  height: 120px;
+}
+
+header .inner .logo {
+  height: 43px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+header .inner .join {
+  position: absolute;
+  display: flex;
+  top: 43px;
+  right: 0;
+  font-weight: 600;
+}
+header .inner .join .longin {
+  position: relative;
+  margin-right: 10px;
+}
+
+header .inner .join .login::after {
+  content: "";
+  width: 1px;
+  height: 15px;
+  position: absolute;
+  top: 5px;
+  margin-left: 10px;
+  background-color: #000;
+}
+
+header .inner .join .signup {
+  margin-left: 20px;
+}
+
+.visual {
+  position: relative;
+  top: 0px;
+  
+}
+
+.visual > .inner {
+  height: 800px;
+}
+
+.visual .inner .contents-1 {
+  position: absolute;
+  top: 180px;
+  height: 800px;
+}
+
+
+.visual .inner .contents-1 .title {
+  font-size: 80px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.visual .inner .contents-1 .explanation {
+  margin-bottom: 45px;
+  font-weight: 500;
+}
+
+.visual .inner .intro-1 {
+  position: absolute;
+  top: 130px;
+  left: 60%;
+}
+
+.visual .inner .contents-2 {
+  position: absolute;
+  top: 1000px;
+}
+
+
+
+
+
