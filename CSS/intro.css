@@ -26,7 +26,7 @@ a {
 button {
   padding: 13px 30px;
   background-color: #7EA0E5;
-  border: 2px solid #fff;
+  border: 2px solid #7EA0E5;
   border-radius: 10px;
   text-align: center;
   font-weight: 550;
@@ -38,19 +38,30 @@ button {
   color: #fff;
 }
 
-/* .btn:hover {
+button:hover {
   background-color: #fff;
+  color: #7EA0E5;
+  border: 3px solid #7EA0E5;
+  font-weight: 600;
 
-} */
+}
 
 
+.condition {
+  background-color: #91AEEA;
+  border-radius: 20px;
+  padding: 7px 3px;
+  width: 100px;
+  text-align: center;
+  font-size: 17px;
+  margin: 0px 10px 2px 40px;
 
+}
 
 /* HEADER */
 header {
   width: 100%;
-  position: fixed;
-  position: relative;
+  position: relative,fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -80,6 +91,7 @@ header .inner .join {
 header .inner .join .longin {
   position: relative;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 header .inner .join .login::after {
@@ -94,6 +106,7 @@ header .inner .join .login::after {
 
 header .inner .join .signup {
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .visual {
@@ -102,38 +115,219 @@ header .inner .join .signup {
   
 }
 
-.visual > .inner {
+.visual .box-1 {
+  position: relative;
+  top: 0px;
   height: 800px;
 }
 
-.visual .inner .contents-1 {
+.visual .box-1 > .inner {
+  height: 800px;
+  position: relative;
+}
+
+.visual .box-1 .inner .contents-1 {
   position: absolute;
-  top: 180px;
-  height: 800px;
+  top: 200px;
+  height: 400px;
+  margin-left: 50px;
 }
 
 
-.visual .inner .contents-1 .title {
+.visual .box-1 .inner .contents-1 .title {
   font-size: 80px;
   font-weight: 900;
   margin-bottom: 10px;
 }
 
-.visual .inner .contents-1 .explanation {
+.visual .box-1 .inner .contents-1 .explanation {
   margin-bottom: 45px;
   font-weight: 500;
 }
 
-.visual .inner .intro-1 {
+.visual .box-1 .inner .intro-1 {
   position: absolute;
   top: 130px;
   left: 60%;
 }
 
-.visual .inner .contents-2 {
-  position: absolute;
-  top: 1000px;
+.visual .box-2 {
+  position: relative;
+  background-color: #D7E3FB;
+  height: 600px;
 }
+
+.visual .box-2 .inner {
+  width: 850px;
+  position: absolute;
+  top: 180px;
+  left: 430px;
+  text-align: center;
+}
+
+.visual .box-2 .inner .contents-2 {
+  display: block;
+  font-size: 80px;
+  font-weight: 600;
+  color: #000;
+}
+
+.visual .box-3 {
+  position: relative;
+  height: 1800px;
+}
+
+.visual .box-3 .inner {
+  height: 2200px;
+  position: absolute;
+  left: 250px;
+  top: 210px;
+  bottom: 210px;
+
+}
+
+.visual .box-3 .inner .partner-1,
+.visual .box-3 .inner .partner-2,
+.visual .box-3 .inner .partner-3 {
+  height: 300px;
+  position: relative;
+  margin-bottom: 210px;
+}
+
+.visual .box-3 .inner .partner-1 img,
+.visual .box-3 .inner .partner-2 img,
+.visual .box-3 .inner .partner-3 img {
+  display: inline;
+  height: 300px;
+  margin-left: 200px;
+
+}
+
+.visual .box-3 .inner .partner-1 h2,
+.visual .box-3 .inner .partner-2 h2,
+.visual .box-3 .inner .partner-3 h2 {
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: 600px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+
+
+.visual .box-3 .inner .partner-1 p,
+.visual .box-3 .inner .partner-2 p,
+.visual .box-3 .inner .partner-3 p {
+  width: 350px;
+  display: inline;
+  position: absolute;
+  top: 120px;
+  left: 600px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.visual .box-4 {
+  background-color: #D7E3FB;
+  height: 450px;
+}
+
+.visual .box-4 .inner .contents-3 {
+  font-size: 80px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 170px;
+}
+
+.visual .box-5 .inner .ex-1,
+.visual .box-5 .inner .ex-2,
+.visual .box-5 .inner .ex-3 {
+  position: relative;
+  height: 500px;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.visual .box-5 .inner .ex-1 img,
+.visual .box-5 .inner .ex-2 img,
+.visual .box-5 .inner .ex-3 img {
+  height: 300px;
+  display: inline;
+  position: absolute;
+  top: 80px;
+  left: 30px;
+}
+
+.visual .box-5 .inner .ex-1 .card-1 {
+  background-color: #D7E3FB;
+  width: 650px;
+  height: 300px;
+  border-radius: 25px;
+  position:absolute;
+  top: 110px;
+  right: 100px;
+}
+
+.visual .box-5 .inner .ex-2 .card-2 {
+  background-color: #E3EBFB;
+  width: 650px;
+  height: 300px;
+  border-radius: 25px;
+  position:absolute;
+  top: 110px;
+  right: 100px;
+}
+
+.visual .box-5 .inner .ex-3 .card-3 {
+  background-color: #ECF1FB;
+  width: 650px;
+  height: 300px;
+  border-radius: 25px;
+  position:absolute;
+  top: 110px;
+  right: 100px;
+}
+
+.visual .box-5 .inner .ex-1 .card-1 .text-1 {
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 34px;
+  margin-left: 60px;
+  border-bottom: 1px solid #000;;
+  padding-bottom: 18px;
+  width: 500px;
+}
+
+.visual .box-5 .inner .ex-2 .card-2 .text-2,
+.visual .box-5 .inner .ex-3 .card-3 .text-3 {
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 70px;
+  margin-left: 60px;
+  border-bottom: 1px solid #000;;
+  padding-bottom: 18px;
+  width: 500px;
+}
+
+.visual .box-5 .inner .ex-1 .card-1 .condition-text1 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 60px;
+  margin-top: 15px;
+}
+
+.visual .box-5 .inner .ex-2 .card-2 .condition-text2,
+.visual .box-5 .inner .ex-3 .card-3 .condition-text3 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 60px;
+  margin-top: 23px;
+}
+
+
+
 
 
 
