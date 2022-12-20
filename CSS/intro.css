@@ -60,13 +60,15 @@ button:hover {
 
 /* HEADER */
 header {
+  background-color: #fff;
   width: 100%;
   position: relative,fixed;
   top: 0;
   left: 0;
   right: 0;
   border-bottom: .5px solid #000;
-  z-index: 1;
+  z-index: 9;
+  position: sticky;
 }
 
 header > .inner {
