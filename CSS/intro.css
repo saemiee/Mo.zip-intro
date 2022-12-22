@@ -90,9 +90,9 @@ header .inner .join {
   right: 0;
   font-weight: 600;
 }
-header .inner .join .longin {
+header .inner .join .login {
   position: relative;
-  margin-right: 10px;
+  /* margin-right: 20px; */
   cursor: pointer;
 }
 
@@ -107,59 +107,59 @@ header .inner .join .login::after {
 }
 
 header .inner .join .signup {
-  margin-left: 20px;
+  margin-left: 22px;
   cursor: pointer;
 }
 
 .visual {
-  position: relative;
   top: 0px;
-  
 }
 
-.visual .box-1 {
+.visual .box1 {
   position: relative;
   top: 0px;
   height: 800px;
 }
 
-.visual .box-1 > .inner {
+.visual .box1 > .inner {
   height: 800px;
   position: relative;
 }
 
-.visual .box-1 .inner .contents-1 {
+.visual .box1 .inner .contents1 {
   position: absolute;
   top: 200px;
   height: 400px;
-  margin-left: 50px;
+  margin-left: 0;
 }
 
 
-.visual .box-1 .inner .contents-1 .title {
-  font-size: 80px;
+.visual .box1 .inner .contents1 .title {
+  font-size: 95px;
   font-weight: 900;
   margin-bottom: 10px;
 }
 
-.visual .box-1 .inner .contents-1 .explanation {
+.visual .box1 .inner .contents1 .explanation {
   margin-bottom: 45px;
   font-weight: 500;
+  font-size: 25px;
 }
 
-.visual .box-1 .inner .intro-1 {
+.visual .box1 .inner .intro {
   position: absolute;
   top: 130px;
   left: 60%;
 }
 
-.visual .box-2 {
+.visual .box2 {
   position: relative;
   background-color: #D7E3FB;
   height: 600px;
+  width: 1920px;
 }
 
-.visual .box-2 .inner {
+.visual .box2 .inner {
   width: 850px;
   position: absolute;
   top: 180px;
@@ -167,47 +167,56 @@ header .inner .join .signup {
   text-align: center;
 }
 
-.visual .box-2 .inner .contents-2 {
+.visual .box2 .inner .contents2 {
   display: block;
   font-size: 80px;
   font-weight: 600;
   color: #000;
 }
 
-.visual .box-3 {
+.visual .box3 {
   position: relative;
   height: 1800px;
 }
 
-.visual .box-3 .inner {
+.visual .box3 .inner {
   height: 2200px;
   position: absolute;
   left: 250px;
   top: 210px;
   bottom: 210px;
-
 }
 
-.visual .box-3 .inner .partner-1,
-.visual .box-3 .inner .partner-2,
-.visual .box-3 .inner .partner-3 {
+.partner {
+  transition: all .1s;
+  opacity: 0;
+}
+
+.partner.active {
+  transition: all 1s;
+  opacity: 1;
+}
+
+.visual .box3 .inner .partner1,
+.visual .box3 .inner .partner2,
+.visual .box3 .inner .partner3 {
   height: 300px;
   position: relative;
   margin-bottom: 210px;
 }
 
-.visual .box-3 .inner .partner-1 img,
-.visual .box-3 .inner .partner-2 img,
-.visual .box-3 .inner .partner-3 img {
+.visual .box3 .inner .partner1 img,
+.visual .box3 .inner .partner2 img,
+.visual .box3 .inner .partner3 img {
   display: inline;
   height: 300px;
   margin-left: 200px;
 
 }
 
-.visual .box-3 .inner .partner-1 h2,
-.visual .box-3 .inner .partner-2 h2,
-.visual .box-3 .inner .partner-3 h2 {
+.visual .box3 .inner .partner1 h2,
+.visual .box3 .inner .partner2 h2,
+.visual .box3 .inner .partner3 h2 {
   display: inline;
   position: absolute;
   top: 0;
@@ -218,9 +227,9 @@ header .inner .join .signup {
 
 
 
-.visual .box-3 .inner .partner-1 p,
-.visual .box-3 .inner .partner-2 p,
-.visual .box-3 .inner .partner-3 p {
+.visual .box3 .inner .partner1 p,
+.visual .box3 .inner .partner2 p,
+.visual .box3 .inner .partner3 p {
   width: 350px;
   display: inline;
   position: absolute;
@@ -231,30 +240,30 @@ header .inner .join .signup {
   line-height: 45px;
 }
 
-.visual .box-4 {
+.visual .box4 {
   background-color: #D7E3FB;
   height: 450px;
 }
 
-.visual .box-4 .inner .contents-3 {
+.visual .box4 .inner .contents3 {
   font-size: 80px;
   font-weight: 600;
   text-align: center;
   padding-top: 170px;
 }
 
-.visual .box-5 .inner .ex-1,
-.visual .box-5 .inner .ex-2,
-.visual .box-5 .inner .ex-3 {
+.visual .box5 .inner .ex1,
+.visual .box5 .inner .ex2,
+.visual .box5 .inner .ex3 {
   position: relative;
   height: 500px;
   margin-top: 50px;
   margin-bottom: 90px;
 }
 
-.visual .box-5 .inner .ex-1 img,
-.visual .box-5 .inner .ex-2 img,
-.visual .box-5 .inner .ex-3 img {
+.visual .box5 .inner .ex1 img,
+.visual .box5 .inner .ex2 img,
+.visual .box5 .inner .ex3 img {
   height: 300px;
   display: inline;
   position: absolute;
@@ -262,7 +271,7 @@ header .inner .join .signup {
   left: 30px;
 }
 
-.visual .box-5 .inner .ex-1 .card-1 {
+.visual .box5 .inner .ex1 .card1 {
   background-color: #D7E3FB;
   width: 650px;
   height: 300px;
@@ -270,9 +279,10 @@ header .inner .join .signup {
   position:absolute;
   top: 110px;
   right: 100px;
+  box-shadow: 10px 10px 17px 7px #EBEBEE;
 }
 
-.visual .box-5 .inner .ex-2 .card-2 {
+.visual .box5 .inner .ex2 .card2 {
   background-color: #E3EBFB;
   width: 650px;
   height: 300px;
@@ -280,9 +290,10 @@ header .inner .join .signup {
   position:absolute;
   top: 110px;
   right: 100px;
+  box-shadow: 10px 10px 17px 7px #EBEBEE;
 }
 
-.visual .box-5 .inner .ex-3 .card-3 {
+.visual .box5 .inner .ex3 .card3 {
   background-color: #ECF1FB;
   width: 650px;
   height: 300px;
@@ -290,9 +301,10 @@ header .inner .join .signup {
   position:absolute;
   top: 110px;
   right: 100px;
+  box-shadow: 10px 10px 17px 7px #EBEBEE;
 }
 
-.visual .box-5 .inner .ex-1 .card-1 .text-1 {
+.visual .box5 .inner .ex1 .card1 .text1 {
   font-weight: 400;
   font-size: 25px;
   margin-top: 34px;
@@ -302,8 +314,8 @@ header .inner .join .signup {
   width: 500px;
 }
 
-.visual .box-5 .inner .ex-2 .card-2 .text-2,
-.visual .box-5 .inner .ex-3 .card-3 .text-3 {
+.visual .box5 .inner .ex2 .card2 .text2,
+.visual .box5 .inner .ex3 .card3 .text3 {
   font-weight: 400;
   font-size: 25px;
   margin-top: 70px;
@@ -313,25 +325,17 @@ header .inner .join .signup {
   width: 500px;
 }
 
-.visual .box-5 .inner .ex-1 .card-1 .condition-text1 {
+.visual .box5 .inner .ex1 .card1 .cardtext1 {
   font-weight: 400;
   font-size: 20px;
   margin-left: 60px;
   margin-top: 15px;
 }
 
-.visual .box-5 .inner .ex-2 .card-2 .condition-text2,
-.visual .box-5 .inner .ex-3 .card-3 .condition-text3 {
+.visual .box5 .inner .ex2 .card2 .cardtext2,
+.visual .box5 .inner .ex3 .card3 .cardtext3 {
   font-weight: 400;
   font-size: 20px;
   margin-left: 60px;
   margin-top: 23px;
 }
-
-
-
-
-
-
-
-
