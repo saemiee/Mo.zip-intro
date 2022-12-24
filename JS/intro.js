@@ -20,8 +20,6 @@ const i = new IntersectionObserver(entries => {
   })
 })
 
-// const contentElems = document.querySelectorAll('.partner');
-
 partnerElems.forEach((el) => {
   i.observe(el);
 })
