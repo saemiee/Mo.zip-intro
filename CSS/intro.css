@@ -15,7 +15,7 @@ a {
 }
 
 .inner {
-  width: 1200px;
+  width: 1450px;
   margin: 0 auto;
   position: relative;
 
@@ -62,37 +62,36 @@ button:hover {
 header {
   background-color: #fff;
   width: 100%;
-  position: relative,fixed;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   border-bottom: .5px solid #000;
   z-index: 9;
   position: sticky;
-}
-
-header > .inner {
-  height: 120px;
+  height: 110px;
 }
 
 header .inner .logo {
-  height: 43px;
+  height: 40px;
   position: absolute;
-  top: 0;
+  top: 35px;
+  left: 0;
   bottom: 0;
   margin: auto;
+  background-color: #fff;
 }
+
 
 header .inner .join {
   position: absolute;
   display: flex;
   top: 43px;
-  right: 0;
+  right: 10px;
   font-weight: 600;
 }
 header .inner .join .login {
   position: relative;
-  /* margin-right: 20px; */
   cursor: pointer;
 }
 
@@ -128,14 +127,14 @@ header .inner .join .signup {
 
 .visual .box1 .inner .contents1 {
   position: absolute;
-  top: 200px;
+  top: 190px;
   height: 400px;
-  margin-left: 0;
+  left: 60px;
 }
 
 
 .visual .box1 .inner .contents1 .title {
-  font-size: 95px;
+  font-size: 90px;
   font-weight: 900;
   margin-bottom: 10px;
 }
@@ -146,10 +145,11 @@ header .inner .join .signup {
   font-size: 25px;
 }
 
-.visual .box1 .inner .intro {
+.visual .box1 .inner .image {
+  height: 450px;
   position: absolute;
-  top: 130px;
-  left: 60%;
+  top: 170px;
+  left: 750px;
 }
 
 .visual .box2 {
@@ -250,6 +250,13 @@ header .inner .join .signup {
   font-weight: 600;
   text-align: center;
   padding-top: 170px;
+}
+
+.visual .box5 {
+  background-color: pink;
+  width: 100%;
+  /* position: absolute;
+  top: 3760px; */
 }
 
 .visual .box5 .inner .ex1,

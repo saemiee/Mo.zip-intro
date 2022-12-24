@@ -25,4 +25,3 @@ const i = new IntersectionObserver(entries => {
 partnerElems.forEach((el) => {
   i.observe(el);
 })
-
